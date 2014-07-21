@@ -1,5 +1,5 @@
-A google app engine app [Goyaka Radios](goyakaradios.appspot.com) to curate playlists based on videos
-added in the facebook group [GoyakaRadios](https://www.facebook.com/groups/goyakaradios/)
+A google app engine app [Goyaka Radios](http://goyakaradios.appspot.com) to curate playlists based on videos
+added in the facebook group [GoyakaRadios](https://www.facebook.com/groups/goyakaradios/) to this youtube channel: [Goyaka Radios](https://www.youtube.com/channel/UCywfYeRDOP6BSDmF7OZjCnA)
 
 To do list:
 
@@ -12,8 +12,7 @@ Usage & Installation:
 
 1. Clone this repo.
 2. Download google-api-python-client which has all dependencies
-3. Get client secrets file using 'web application' as type of the application 
-... [Don't forget to give correct redirect URI 's]
+3. Get client secrets file using 'web application' as type of the application [Don't forget to give correct redirect URI 's]
 4. Replace `config/default_fb_properties.cfg` with `fb_properties.cfg` updating the values in the config file
 5. Tweak the cron file to your requirements. 
 6. Deploy it
@@ -28,4 +27,4 @@ Feature Requests:
 
 [Bugs](https://github.com/sugavaneshb/GoyakaRadios/issues) are always welcome!
 
-Credits: [DailyGrooves](https://github.com/ronjouch/dailygrooves), [FBGroupArchiver] (https://github.com/makkarlabs/FBGroupArchiver), StackOverflow and GoogleAppEngine Developer docs 
+Credits: [DailyGrooves](https://github.com/ronjouch/dailygrooves), [FBGroupArchiver](https://github.com/makkarlabs/FBGroupArchiver), StackOverflow and GoogleAppEngine Developer docs 
