@@ -1,4 +1,4 @@
-A google app engine app [Goyaka Radios](goyakaradios.appspot.com) to curate playlists based on videos 
+A google app engine app [Goyaka Radios](goyakaradios.appspot.com) to curate playlists based on videos
 added in the facebook group [GoyakaRadios](https://www.facebook.com/groups/goyakaradios/)
 
 To do list:
@@ -8,11 +8,13 @@ To do list:
 3. Admin view in the app to view the stats
 
 Feature Requests:
+
 1. Index and create playlists taking into account number of likes
 2. Language specific playlists
 
 
 To clone this for other facebook groups or add features: 
+
 1. Clone this repo.
 2. Get client secrets file using 'web application' as type of the application 
 ... [Don't forget to give correct redirect URI 's]
