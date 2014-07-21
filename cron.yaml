@@ -1,0 +1,8 @@
+cron:
+- description: Minutewise Feed Monitor
+  url: /cronfetch
+  schedule: every 6 hours
+
+- description: Initial Feed Logging
+  url: /initcronfetch
+  schedule: every 24 hours
