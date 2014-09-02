@@ -234,11 +234,11 @@ class FbHelper:
         mmyy = parse_date(post.get('created_time'))
         id = ''
         embeds_re = re_compile(r'''
-            (?:youtube(?:-nocookie)?\.com # youtube.com or youtube-nocookie.com
-            |                             # or
-            youtu\.be)/                   # youtu.be
-            (?:embed/|watch\?v=)          # /embed/... or /watch?v=...
-            ([^\s\"\?&]+)                 # capture & stop at whitespace " ? &
+            (?:youtube(?:-nocookie)?\.com                        # youtube.com or youtube-nocookie.com
+            |                                                    # or
+            youtu\.be)/                                          # youtu.be
+            (?:embed/|watch\?v=|watch/\?v=|embed/\?v=)?          # /embed/... or /watch?v=... or /watch/?v=... or /embed/?v=... or /...
+            ([^\s\"\?&]+)                                        # capture & stop at whitespace " ? &
             ''', VERBOSE)
         link = post.get('link')
         embeds = []
