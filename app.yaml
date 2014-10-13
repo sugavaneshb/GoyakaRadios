@@ -32,6 +32,9 @@ handlers:
   script: goyakaradios.app
   login: admin
 
+- url: /
+  script: goyakaradios.app
+
 libraries:
 - name: webapp2
   version: latest

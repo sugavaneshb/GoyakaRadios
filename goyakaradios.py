@@ -504,8 +504,34 @@ class GetPlaylistJs(RequestHandler):
         self.response.headers['Content-Type'] = 'application/javascript'
         self.response.write(dgjs)
 
+MAIN_PAGE_TEMPLATE = '''
+<html>
+<head>
+<title> Goyaka Radios </title>
+<body>
+<h2> Goyaka Radios Playlist Curator (Temporary Landing Page) </h2>
+<a href="https://github.com/sugavaneshb/GoyakaRadios"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+
+<p> - Curates playlists from fb group <a href="https://www.facebook.com/groups/goyakaradios/">Goyaka Radios</a>. Playlists curated are present <a href="https://www.youtube.com/channel/UCywfYeRDOP6BSDmF7OZjCnA/playlists">here</a> </p>
+<p> <b> Contact for suggestions and bugs: </b> <a href="mailto:sugavaneshb@gmail.com"> Sugavanesh B </a> </p>
+</body>
+</html>
+
+'''
+
+
+class MainPage(RequestHandler):
+    '''
+    Just a landing page. 
+    Will have to use this section to generate stats
+    '''
+
+    def get(self):
+        self.response.headers['Content-Type'] = 'text/html'
+        self.response.write(MAIN_PAGE_TEMPLATE)
 
 APP_ROUTES = [
+          ('/', MainPage),
           ('/goyakaradios.js', GetPlaylistJs),
           ('/cronfetch', CronFetchHandler),
           ('/initcronfetch', InitCronFetchHandler),
